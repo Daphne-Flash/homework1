@@ -130,6 +130,7 @@ studentID, schoolYear, grade, credit的每一個元素位置其值分別代表�
 pass <- grade >= 60
 pass <- as.integer(pass)
 earnedCredit <- pass*credit
+earnedCredit <- as.integer(earnedCredit)
 class(earnedCredit)
 earnedCredit
 ```
@@ -151,8 +152,9 @@ earnedCredit100ChosenStudent
 ### 3.4
 請問學號為046S6f645的學生在100學年的學年平均成績為多少？（存在答案物件gpa100ChosenStudent）(即為該生該學年所有**學分數大於0**的各科學期成績**分別乘上各科學分數**加總後，除以其該學年總學分數) (hint: 建議先創一個可以代表元素是否來自**該學號**，且**100學年**，且**學分數>0**的logical class物件，用它來選出所要的成績或學分進行必要相乘或加總)
 ```{r ans34}
-n1 <- (studentID == "046S6f645" & schoolYear==100 & grade>=60)*credit
-sumn1 <-sum(n1*grade)
+n1 <- (studentID == "046S6f645" & schoolYear==100 & credit>0 )
+class(n1)
+sumn1 <-sum(n1*credit*grade)
 gpa100ChosenStudent <- sumn1/earnedCredit100ChosenStudent
 gpa100ChosenStudent
 ```

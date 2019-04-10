@@ -1,8 +1,0 @@
-"0","n1 <- (studentID == ""046S6f645"" & schoolYear==100 & grade>=60)*credit"
-"0","sumn1 <-sum(n1*grade)"
-"0","gpa100ChosenStudent <- sumn1/earnedCredit100ChosenStudent"
-"0","gpa100ChosenStudent"
-"1","[1]"
-"1"," 69.71429"
-"1","
-"

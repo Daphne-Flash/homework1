@@ -1,5 +1,4 @@
 "0","library(readr)"
-"2","package ¡¥readr¡¦ was built under R version 3.5.3"
 "2","Warning message:
 "
 "2","In strsplit(code, ""\n"", fixed = TRUE) :"
@@ -19,6 +18,9 @@ cols(
   ¾Ç¤À¼Æ = [32mcol_double()[39m,
   `¥²¿ï­×Ãþ§O¡]¥²¢A¿ï¢A³q¡^` = [31mcol_character()[39m
 )
+"
+"2","Warning:"
+"2"," closing unused connection 4 (https://raw.githubusercontent.com/tpemartin/github-data/master/podcastcompetition3.csv)
 "
 "0","studentID <- transcriptDataFinal$å­¸è™Ÿ"
 "0","schoolYear <- transcriptDataFinal$å­¸å¹´"
