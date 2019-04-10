@@ -99,7 +99,6 @@ twTime
 hour(twTime)
 nightOwl <- hour(twTime)<=6 & hour(twTime)>=1
 nightOwl
-              
 ```
 
 ### 2.4
@@ -131,6 +130,7 @@ studentID, schoolYear, grade, credit的每一個元素位置其值分別代表�
 pass <- grade >= 60
 pass <- as.integer(pass)
 earnedCredit <- pass*credit
+class(earnedCredit)
 earnedCredit
 ```
 
@@ -155,7 +155,6 @@ n1 <- (studentID == "046S6f645" & schoolYear==100 & grade>=60)*credit
 sumn1 <-sum(n1*grade)
 gpa100ChosenStudent <- sumn1/earnedCredit100ChosenStudent
 gpa100ChosenStudent
-
 ```
 
 > 答案後，請確認每個code chunk的最後一行皆為該題的答案物件。
