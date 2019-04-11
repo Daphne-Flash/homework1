@@ -4,7 +4,7 @@
 "1"," ""logical"""
 "1","
 "
-"0","sumn1 <-sum(n1*credit*grade)"
+"0","sumn1 <-sum(n1*grade*credit)"
 "0","gpa100ChosenStudent <- sumn1/earnedCredit100ChosenStudent"
 "0","gpa100ChosenStudent"
 "1","[1]"
